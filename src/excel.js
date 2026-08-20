@@ -24,9 +24,7 @@ async function writeResults({ excelPath, sheetName, screenshots, result }) {
     sheet._media = [];
     sheet._rows = [];
     sheet.columns = [
-        { header: 'Step', key: 'step', width: 28 },
-        { header: 'Result', key: 'result', width: 18 },
-        { header: 'URL', key: 'url', width: 55 }
+        { header: 'URL', key: 'url', width: 16 }
     ];
     sheet.addRow({ step: result.step, result: result.status, url: result.url });
     if (!workbook.views) workbook.views = [];
