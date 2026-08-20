@@ -23,9 +23,7 @@ async function writeResults({ excelPath, sheetName, screenshots, result }) {
     // ExcelJS 4.x exposes images for reading but has no removeImage API.
     sheet._media = [];
     sheet._rows = [];
-    sheet.columns = [
-        { header: 'URL', key: 'url', width: 16 }
-    ];
+    sheet.columns = [{ header: 'URL', key: 'url', width: 16 }];
     sheet.addRow({ step: result.step, result: result.status, url: result.url });
     if (!workbook.views) workbook.views = [];
     if (workbook.views.length === 0) workbook.views.push({ activeTab: 0 });
