@@ -1,0 +1,24 @@
+{
+  "browser": {
+    "headless": false,
+    "slowMo": 300,
+    "viewport": { "width": 1440, "height": 900 }
+  },
+  "excel": {
+    "path": "output/result.xlsx",
+    "sheetName": "test",
+    "imageStartColumn": "B",
+    "maxImageWidth": null,
+    "rowHeight": 18,
+    "gapRows": 2,
+    "imageSafetyRows": 4
+  },
+  "screenshotsDir": "screenshots",
+  "steps": [
+    { "action": "goto", "url": "https://example.com/login" },
+    { "action": "fill", "selector": "#userId", "value": "YOUR_USER_NAME" },
+    { "action": "fill", "selector": "#password", "value": "YOUR_PASSWORD" },
+    { "action": "click", "role": "button", "name": "ログイン (Login)" },
+    { "action": "screenshot", "name": "after-login", "fullPage": true, "includeUrl": true }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "webautotest",
+  "version": "1.0.0",
+  "description": "Config-driven Playwright web testing with screenshots and Excel reports",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node src/main.js",
+    "install:browsers": "playwright install chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "playwright": "^1.62.1"
+  }
+}
