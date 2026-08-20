@@ -7,6 +7,12 @@
   "excel": {
     "path": "output/result.xlsx",
     "sheetName": "test001",
+    "labels": {
+      "step": "步骤",
+      "result": "结果",
+      "url": "网址"
+    },
+    "passText": "通过",
     "imageStartColumn": "B",
     "maxImageWidth": null,
     "rowHeight": 18,
@@ -21,7 +27,7 @@
     { "action": "click", "role": "button", "name": "ログイン (Login)" },
     { "action": "goto", "url": "http://localhost:3000/studies/7beb6f94-2ff3-444d-a79f-5246c1cc0613" },
     { "action": "click", "role": "button", "name": "CRF設計" },
-    { "action": "screenshot", "name": "form-error", "fullPage": true, "includeUrl": true },
+    { "action": "image", "role": "autoImage", "readyTimeout": 10000 },
     { "action": "goto", "url": "http://localhost:3000/crfs/98caeeec-2bc6-466c-a06f-c771e8e096a1" }
   ]
 }
