@@ -3,7 +3,11 @@
 这是一个由 JSON 配置驱动的 Playwright 网页测试程序。后续只需要修改配置文件，然后执行主程序即可。
 
 ## 运行
-
+第一次运行执行
+```bash
+npm install
+```
+正常执行
 ```bash
 npm start
 ```
